@@ -13,7 +13,7 @@ from forms import CreateContactForm
 load_dotenv()
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "your_secret_key"
+app.config["SECRET_KEY"] = os.getenv("YOUR_SECRET_KEY")
 ckeditor = CKEditor(app)
 bootstrap = Bootstrap5(app)
 
@@ -65,7 +65,7 @@ def contact():
         {message}
         """
 
-        send_email(send_message, "antdp408@gmail.com")
+        send_email(send_message, os.getenv("EMAIL_RECEIVER"))
         return redirect(url_for("contact", sent="true"))
     msg_sent = request.args.get("sent") == "true"
     return render_template("contact.html", form=form, msg_sent=msg_sent)
