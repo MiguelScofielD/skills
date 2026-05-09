@@ -1,0 +1,303 @@
+{% extends "base.html" %} {% block content %}
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <img
+      src="{{ url_for('static', filename='antonio.jpg') }}"
+      class="rounded-circle shadow"
+      style="width: 180px; height: 180px; object-fit: cover"
+    />
+
+    <h1 class="text-body-emphasis">Antonio Santana</h1>
+
+    <p class="lead text-muted">
+      Engenharia Cartográfica • SIG • Python • Geoprocessamento
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+    <!-- Formação -->
+    <div class="col">
+      <div
+        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+            url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNGJ5cYTEWsUrLZ4Q1PG1tHAB8FWYLDIFrA&s&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+          <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Formação Acadêmica</h3>
+
+          <p>
+            Bacharelado em Engenharia Cartográfica pelo Instituto Militar de
+            Engenharia.
+          </p>
+
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <small>IME • 2022</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experiência -->
+    <div class="col">
+      <div
+        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(126, 120, 120, 0.7)),
+            url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBxZZma0ACLL_qtd-R5-TxaQ03hAsMOWHuQ&s&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+          <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Geoprocessamento</h3>
+
+          <p>
+            Produção cartográfica, análise espacial, QGIS, vetorização e
+            reambulação.
+          </p>
+
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <small>4º Centro de Geoinformação</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="col">
+      <div
+        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+            url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-OCnRVA9Q5kQglaVN_3Dpe2NkmWnwmnR1w&s&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+          <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Python & Automação</h3>
+
+          <p>
+            Automação de rotinas SIG, PostGIS, GDAL, PyQGIS e desenvolvimento
+            web.
+          </p>
+
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <small>Python • PostgreSQL • APIs</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="mb-3">Formação Acadêmica</h3>
+
+          <h5>Bacharelado em Engenharia Cartográfica</h5>
+
+          <p class="text-muted mb-0">
+            Instituto Militar de Engenharia — Conclusão em 2022
+          </p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="mb-4">Experiência Profissional</h3>
+
+          <h5>4º Centro de Geoinformação - Engenheiro Cartógrafo</h5>
+
+          <p class="text-muted">2 anos e 10 meses de experiência</p>
+
+          <ul>
+            <li>
+              Elaboração de produtos cartográficos e mapas temáticos no QGIS.
+            </li>
+            <li>Automação de rotinas de geoprocessamento utilizando Python.</li>
+            <li>Manipulação de dados espaciais em bancos de dados PostGIS.</li>
+            <li>Apoio em projetos de georreferenciamento de imóveis rurais.</li>
+            <li>Trabalho de Reambulação.</li>
+            <li>Implementação de WMS em serviço de código aberto.</li>
+            <li>Processamento de imagens de satélite e ortofotos.</li>
+            <li>Aquisição de dados geoespaciais vetoriais.</li>
+            <li>Análise, edição e vetorização de dados geográficos.</li>
+            <li>Produção de layouts cartográficos e relatórios técnicos.</li>
+            <li>Configuração de serviços em ambiente corporativo.</li>
+            <li>Documentação de serviços e metodologias via Docusaurus.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="mb-4">Competências Técnicas</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h5>SIG</h5>
+              <p>QGIS, Pix4D, FME</p>
+
+              <h5>Banco de Dados</h5>
+              <p>PostgreSQL/PostGIS</p>
+            </div>
+
+            <div class="col-md-6">
+              <h5>Programação</h5>
+              <p>Python (PyQGIS, GDAL), HTML, CSS, JavaScript</p>
+
+              <h5>Topografia</h5>
+              <p>GNSS, Estação total, drones</p>
+
+              <h5>Sensoriamento Remoto</h5>
+              <p>Ortorretificação, mosaico, classificação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="mb-3">Idiomas</h3>
+
+          <ul>
+            <li>Português — Nativo</li>
+            <li>Inglês — Básico</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="mb-3">Cursos Complementares</h3>
+
+          <ul>
+            <li>Python — Santander Open Academy (2025)</li>
+            <li>
+              DIO — Introdução à Programação Orientada a Objetos com Python
+              (2025)
+            </li>
+            <li>DIO — Versionamento de Código com Git e GitHub (2025)</li>
+            <li>DIO — Trabalhando com coleções em Python (2025)</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-5">Certificações</h2>
+
+  <div class="row g-4 justify-content-center">
+    <!-- Badge -->
+    <div class="col-md-4 col-lg-3">
+      <div class="card border-0 shadow rounded-4 h-100 text-center p-3">
+        <img
+          src="https://assets.santanderopenacademy.com/uploaded/programs/bd7861c7-8c47-44f2-8f43-cbe856f484d9"
+          class="img-fluid mx-auto mb-3"
+          style="width: 140px"
+          alt="Python Developer"
+        />
+
+        <h5 class="fw-bold">Python Developer</h5>
+
+        <p class="text-muted small">Santander Open Academy • 2025</p>
+
+        <a
+          href="{{url_for('static', filename='Py_santander.pdf')}}"
+          class="btn btn-outline-dark rounded-pill"
+        >
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+    <!-- Badge -->
+    <div class="col-md-4 col-lg-3">
+      <div class="card border-0 shadow rounded-4 h-100 text-center p-3">
+        <img
+          src="https://assets.dio.me/lQ85EDvhMQr6iq_KoHv3Mxr3M-pD_Sm64cQjWxsiH7M/f:webp/q:80/w:120/L2NvdXJzZXMvYmFkZ2UvNDA2Njg0YTQtMzk2ZC00MTYwLTk0YjktZWFkOTM0ZTE4NTY0LnBuZw"
+          class="img-fluid mx-auto mb-3"
+          style="width: 140px"
+          alt="Python Developer"
+        />
+
+        <h5 class="fw-bold">Versionamento de Código com Git e GitHub</h5>
+
+        <p class="text-muted small">DIO • 2025</p>
+
+        <a
+          href="{{url_for('static', filename='Git_GitHub.pdf')}}"
+          class="btn btn-outline-dark rounded-pill"
+        >
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+    <!-- Badge -->
+    <div class="col-md-4 col-lg-3">
+      <div class="card border-0 shadow rounded-4 h-100 text-center p-3">
+        <img
+          src="https://assets.dio.me/7P7U5g4ob4_Cxhb1KAQjjJ8Ii8MhIJpQShzXMGvY8Ag/f:webp/q:80/w:120/L2NvdXJzZXMvYmFkZ2UvNWEyMTZiOTgtYzY4OS00ZTdmLTk4YTctYzc1MTQ1YmNmZmVkLnBuZw"
+          class="img-fluid mx-auto mb-3"
+          style="width: 140px"
+          alt="Python Developer"
+        />
+
+        <h5 class="fw-bold">Trabalhando com Coleções em Python</h5>
+
+        <p class="text-muted small">DIO • 2025</p>
+
+        <a
+          href="{{url_for('static', filename='colecoes.pdf')}}"
+          class="btn btn-outline-dark rounded-pill"
+        >
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+    <!-- Badge -->
+    <div class="col-md-4 col-lg-3">
+      <div class="card border-0 shadow rounded-4 h-100 text-center p-3">
+        <img
+          src="https://assets.dio.me/7P7U5g4ob4_Cxhb1KAQjjJ8Ii8MhIJpQShzXMGvY8Ag/f:webp/q:80/w:120/L2NvdXJzZXMvYmFkZ2UvNWEyMTZiOTgtYzY4OS00ZTdmLTk4YTctYzc1MTQ1YmNmZmVkLnBuZw"
+          class="img-fluid mx-auto mb-3"
+          style="width: 140px"
+          alt="Python Developer"
+        />
+
+        <h5 class="fw-bold">
+          Introdução à Programação Orientada a Objetos com Python
+        </h5>
+
+        <p class="text-muted small">DIO • 2025</p>
+
+        <a
+          href="{{url_for('static', filename='POO.pdf')}}"
+          class="btn btn-outline-dark rounded-pill"
+        >
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

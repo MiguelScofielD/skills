@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% from "bootstrap5/form.html" import render_form %}
+{% block content %}
+
+<div class="container">
+  <h1>Entre em contato</h1>
+
+  {% if msg_sent %}
+  <p class="alert alert-success">Sua mensagem foi enviada com sucesso!</p>
+  {% endif %} {{ render_form(form) }} {{ ckeditor.load() }} {{
+  ckeditor.config(name='message') }}
+</div>
+
+{% endblock %}
